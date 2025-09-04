@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -52,7 +54,7 @@ export default function HomePage() {
 
       <div className="flex-1 flex items-center justify-center p-6">
         <div className="w-full max-w-xl bg-black-50 shadow-lg rounded-2xl p-6">
-          <h1 className="text-2xl font-bold mb-4 text-center text-blue-700">
+          <h1 className="text-2xl font-bold mb-4 text-center text-blue-950">
             Leave a Comment
           </h1>
 
@@ -79,14 +81,14 @@ export default function HomePage() {
             />
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg"
+              className="w-full bg-blue-950 hover:bg-blue-950 text-white py-2 rounded-lg"
             >
               Submit
             </button>
           </form>
 
           <p className="mt-6 text-center text-blue-700">
-            Go to <a href="/blog" className="font-semibold underline">comment</a> to see all comments.
+            Go to < Link href="/blog" className="font-semibold underline">comment</Link> to see all comments.
           </p>
         </div>
       </div>

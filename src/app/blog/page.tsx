@@ -1,7 +1,7 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
-
 interface Comment {
   name: string;
   email: string;
@@ -44,7 +44,7 @@ export default function BlogPage() {
         )}
 
         <p className="mt-6 text-center text-blue-700">
-          <a href="/" className="font-semibold underline">← Back to Home</a>
+          < Link href="/" className="font-semibold underline">← Back to Home</Link>
         </p>
       </div>
     </div>
